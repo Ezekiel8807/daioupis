@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "design and implimentation of university project information system",
+  "main": "app.js",
+  "scripts": {
+    "test": "hello there"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezekiel8807/daioupis.git"
+  },
+  "author": "Ezefizzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezekiel8807/daioupis/issues"
+  },
+  "homepage": "https://github.com/Ezekiel8807/daioupis#readme"
+}
