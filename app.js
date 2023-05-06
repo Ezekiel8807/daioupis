@@ -1,0 +1,6 @@
+
+
+document.readyState( () => {
+
+    fetch();
+})
