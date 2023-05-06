@@ -1,6 +1,5 @@
 
 
 document.readyState( () => {
-
-    fetch();
+    alert("hello world");
 })
