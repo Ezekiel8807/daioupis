@@ -1,5 +1,10 @@
+import express from "express";
+
+const port = 3000;
 
 
-document.readyState( () => {
-    alert("hello world");
-})
+
+const daioupis = express();
+
+
+daioupis.listen(port => console.log("Server started"))
