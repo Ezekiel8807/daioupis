@@ -4,38 +4,42 @@
 }
 
 header {
+    background-color: #31b33c;
     border-bottom: 1px solid #c3c3c3;
 }
 
 .navbtn {
-    top: 3px;
+    top: 0;
     right: 5px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
+    background-color: black;
 }
 
 .navbtn .bar {
-    width: 30px;
+    width: 24px;
     height: 2px;
-    margin-left: 10px;
-    background-color: #31b33c;
+    margin-left: 3px;
+    background-color: #ffffff;
 }
 
 .navbtn .bar:first-child {
-    margin-top: 15px;
-    margin-bottom: 8px;
+    content: "";
+    margin-top: 6px;
+    margin-bottom: 5px;
 }
 
 .navbtn .bar:last-child {
-    margin-top: 8px;
-    margin-bottom: 15px;
+    content: "";
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
 
 .logo {
     margin: 10px;
-    color: #31b33c;
+    color: #ffffff;
     font-size: 1.5em;
     font-weight: bold;
 }
