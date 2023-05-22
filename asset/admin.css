@@ -1,0 +1,40 @@
+.adminReg, .adminlog {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #cccccc;
+}
+
+.adminReg h3, .adminlog h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.adminReg form input, .adminlog form input {
+    padding: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    outline-style: none;
+    border: 1px solid #cccccc;
+}
+
+.adminReg form a, .adminlog form a {
+    font-size: small;
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 2px auto;
+    text-decoration: none;
+}
+
+.adminReg form input:last-child, .adminlog form input:last-child {
+    background-color: #31b33c;
+}
