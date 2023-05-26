@@ -1,0 +1,59 @@
+.navbtn {
+    display: block;
+}
+
+.headerNav {
+    width: 100%;
+    display: none;
+    text-align: left;
+    background-color: #ececec;
+}
+
+.headerNav a{
+    width: 100%;
+    color: #1f74bb;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+} 
+
+.headerNav a:hover {
+    background-color: #fff;
+} 
+
+
+.wrapper {
+    display: block;
+    justify-content: center; 
+    align-items: center
+}
+
+.wrapperBlock2 {
+    width: 90%;
+    margin: auto;
+}
+
+.wrapperBlock2 h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapperBlock2 p{
+    width: 80%;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+.wrapperBlock2 input{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.wrapperBlock2 input:first-child {
+    width: 100%;
+    outline: none;
+}

@@ -3,16 +3,22 @@
     padding: 0;
 }
 
+div .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 header {
-    background-color: #31b33c;
+    background-color: #1f74bb;
     border-bottom: 1px solid #c3c3c3;
 }
 
 .navbtn {
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 20px;
     width: 30px;
     height: 30px;
+    display: none;
     position: absolute;
 }
 
@@ -35,14 +41,60 @@ header {
     margin-bottom: 8px;
 }
 
-
 .logo {
-    padding: 5px 10px;
-    color: #ffffff;
     font-size: 1.5em;
+    margin: 10px 10px;
+    color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .headerNav {
-    display: none;
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+    
 }
+
+.headerNav a{
+    font-size: 1em;
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center
+}
+
+.wrapperBlock1 img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 10% auto;
+}
+
+.wrapperBlock2 h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.wrapperBlock2 p{
+    width: 80%;
+    font-size: 1em;
+}
+
+.wrapperBlock2 input{
+    padding: 10px;
+}
+
+.wrapperBlock2 input:first-child {
+    width: 70%;
+    outline: none;
+}
+
