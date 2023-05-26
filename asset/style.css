@@ -10,7 +10,7 @@ div .row {
 
 header {
     background-color: #1f74bb;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #fafafa;
 }
 
 .navbtn {
@@ -79,7 +79,7 @@ header {
     margin: 10% auto;
 }
 
-.wrapperBlock2 h1{
+.wrapperBlock2 h1 {
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -98,3 +98,21 @@ header {
     outline: none;
 }
 
+
+
+/* search page css styling */
+.searchBlock1 {
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.searchBlock1 h1 {
+    font-size: 3em;
+}
+
+.searchBlock2 {
+    padding: 10px;
+    background-color: #fafafa;
+}
