@@ -38,3 +38,62 @@
 .adminReg form input:last-child, .adminlog form input:last-child {
     background-color: #31b33c;
 }
+
+
+
+/* admin header styling */
+.dash_head {
+    height: 10vh;
+    background-color: #31b33c;
+}
+
+.navbtn {
+    display: none;
+}
+
+.dash_head_icon {
+    top: 12px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 3px #000;
+}
+
+.dash_head_icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/* dashboard aside section */
+.dash_aside {
+    width: 300px;
+    height: 90vh;
+    background-color: black;
+}
+
+.profile_info {
+    padding-top: 20px;
+}
+
+.profile_info img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #ffffff;
+}
+
+.profile_info h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}

@@ -57,3 +57,14 @@
     width: 100%;
     outline: none;
 }
+
+
+
+
+.dash_head_icon {
+    display: none;
+}
+
+.dash_aside {
+    display: none;
+}

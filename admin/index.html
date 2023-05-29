@@ -10,38 +10,27 @@
 
   <link rel="stylesheet" href="../asset/style.css">
   <link rel="stylesheet" href="../asset/admin.css">
-  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-
-  <!-- Favicons -->
-  <!-- <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-  <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-  <meta name="theme-color" content="#712cf9"> -->
-
 </head><!-- /.container -->
 <body>
 
   <!-- MAIN -->
   <main>
-
     <div class="container">
         <div class="adminlog">
             <h3>Admin Login</h3>
-            <form action="" method="post">
-                <input type="text" name="" id="" pattern="/[A-Za-z0-9]/" title="usernane" placeholder="USERNAME" required>
-                <input type="password" name="" id="" pattern="/[A-Za-z0-9]/" title="password" placeholder="PASSWORD" required>
+            <small style="color: #ff0000;" id="err_msg"></small>
+            <form onsubmit="event.preventDefault();" method="post">
+                <input type="text" name="username" id="username" title="username" placeholder="USERNAME" required>
+                <input type="password" name="password" id="password" title="password" placeholder="PASSWORD" required>
                 <a href="">Forget Password?</a>
-                <input type="submit" value="Login">
+                <input type="submit" value="Login" onclick="adminlogin();"/>
             </form>
         </div>
     </div>
   </main>
 
+  <script src="../app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
