@@ -18,13 +18,13 @@
   <main>
     <div class="container">
         <div class="adminlog">
-            <h3>Admin Login</h3>
-            <small style="color: #ff0000;" id="err_msg"></small>
             <form onsubmit="event.preventDefault();" method="post">
+                <h3>Admin Login</h3>
+                <small style="color: #ff0000;" id="err_msg"></small>
                 <input type="text" name="username" id="username" title="username" placeholder="USERNAME" required>
                 <input type="password" name="password" id="password" title="password" placeholder="PASSWORD" required>
-                <a href="">Forget Password?</a>
-                <input type="submit" value="Login" onclick="adminlogin();"/>
+                <a href="forget.html">Forget Password?</a>
+                <button type="submit" onclick="adminlogin();">Login</button>
             </form>
         </div>
     </div>

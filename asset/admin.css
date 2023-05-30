@@ -8,35 +8,32 @@
     box-shadow: 0px 0px 3px #cccccc;
 }
 
-.adminReg h3, .adminlog h3 {
-    font-weight: bold;
-    font-size: 30px;
-    padding: 20px;
+.adminlog form, .adminReg form {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.adminlog form h3, .adminReg form h3 {
+    font-size: 2em;
     text-align: center;
+    padding: 20px;
 }
 
-.adminReg form input, .adminlog form input {
+.adminlog form small, .adminReg form small {
+    color: red;
+}
+
+.adminlog form input, .adminReg form input {
     padding: 5px;
-    width: 80%;
-    max-width: 500px;
     margin: 10px auto;
-    display: block;
-    border-radius: 5px;
-    outline-style: none;
-    border: 1px solid #cccccc;
+    width: 100%;
+    outline: none;
 }
 
-.adminReg form a, .adminlog form a {
-    font-size: small;
-    width: 80%;
-    max-width: 500px;
-    display: block;
-    margin: 2px auto;
-    text-decoration: none;
-}
-
-.adminReg form input:last-child, .adminlog form input:last-child {
-    background-color: #31b33c;
+.adminlog form button, .adminReg form button {
+    width: 104%;
+    padding: 5px;
+    margin: 20px auto;
 }
 
 
@@ -96,4 +93,16 @@
     padding: 10px;
     color: #ffffff;
     text-align: center;
+}
+
+
+/* navigation */
+.navigation a {
+    font-size: 1em;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
 }
