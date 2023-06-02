@@ -1,4 +1,4 @@
-.adminReg, .adminlog {
+.adminReg, .adminlog, .adminFog {
     width: 80%;
     margin: 50px auto;
     max-width: 400px;
@@ -8,29 +8,29 @@
     box-shadow: 0px 0px 3px #cccccc;
 }
 
-.adminlog form, .adminReg form {
+.adminlog form, .adminReg form, .adminFog form {
     width: 80%;
     margin: 0px auto;
 }
 
-.adminlog form h3, .adminReg form h3 {
+.adminlog form h3, .adminReg form h3, .adminFog form h3 {
     font-size: 2em;
     text-align: center;
     padding: 20px;
 }
 
-.adminlog form small, .adminReg form small {
+.adminlog form small, .adminReg form small, .adminFog form small {
     color: red;
 }
 
-.adminlog form input, .adminReg form input {
+.adminlog form input, .adminReg form input, .adminFog form input {
     padding: 5px;
     margin: 10px auto;
     width: 100%;
     outline: none;
 }
 
-.adminlog form button, .adminReg form button {
+.adminlog form button, .adminReg form button, .adminFog form button {
     width: 104%;
     padding: 5px;
     margin: 20px auto;
@@ -97,12 +97,22 @@
 
 
 /* navigation */
+.navigation {
+}
+
 .navigation a {
+    width: 80%;
     font-size: 1em;
     padding: 10px;
-    display: block;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-weight: bold;
     color: #ffffff;
-    text-align: center;
     text-decoration: none;
+}
+
+.navigation a span {
+    font-weight: bold;
 }

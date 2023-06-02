@@ -28,7 +28,7 @@
     </div>
 
     <!-- logo -->
-    <div class="logo" id="logo"> Daioupis </div>
+    <div class="logo" id="logo" onclick="logo();"> Daioupis </div>
 
     <!-- header navigation -->
     <nav id="headerNav" class="headerNav">
@@ -52,9 +52,9 @@
     <div class="search_wrapper">
 
       <div class="searchBlock1">
-        <h1>Discover project ideas</h1>
+        <h3>Discover project ideas</h3>
         <p>Access large range of students projects and stay up to date with what happening in your field</p>
-        <form action="">
+        <form onsubmit="event.preventDefault();" method="get">
           <input type="search" name="" id="" placeholder="Search projects" required>
           <input type="submit" value="Search">
         </form>

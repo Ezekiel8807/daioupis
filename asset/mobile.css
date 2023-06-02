@@ -28,25 +28,25 @@
     align-items: center
 }
 
-.wrapperBlock2 {
+.wrapperBlock2 , .searchBlock1 {
     width: 90%;
     margin: auto;
 }
 
-.wrapperBlock2 h1{
-    font-size: 2.5em;
+.wrapperBlock2 h1, .searchBlock1 h3 {
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
 }
 
-.wrapperBlock2 p{
-    width: 80%;
+.wrapperBlock2 p, .searchBlock1 p {
+    width: 100%;
     font-size: 1em;
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
 }
 
-.wrapperBlock2 input{
+.wrapperBlock2 input, .searchBlock1 input {
     width: 100%;
     display: block;
     text-align: center;

@@ -73,23 +73,25 @@ header {
 }
 
 .wrapperBlock1 img {
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: block;
     margin: 10% auto;
 }
 
-.wrapperBlock2 h1 {
+.wrapperBlock2 h1, .searchBlock1 h3 {
     font-size: 2.5em;
     font-weight: bold;
 }
 
-.wrapperBlock2 p{
+.wrapperBlock2 p, .searchBlock1 p {
     width: 80%;
+    word-spacing: 3px;
     font-size: 1em;
+    margin: 10px 0px;
 }
 
-.wrapperBlock2 input{
+.wrapperBlock2 input, .searchBlock1 input {
     padding: 10px;
 }
 
