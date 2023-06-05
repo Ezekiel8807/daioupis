@@ -1,0 +1,118 @@
+.adminReg, .adminlog, .adminFog {
+    width: 90%;
+    margin: 50px auto;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #cccccc;
+}
+
+.adminlog form, .adminReg form, .adminFog form {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.adminlog form h3, .adminReg form h3, .adminFog form h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+.adminlog form small, .adminReg form small, .adminFog form small {
+    color: red;
+}
+
+.adminlog form input, .adminReg form input, .adminFog form input {
+    padding: 5px;
+    margin: 10px auto;
+    width: 100%;
+    outline: none;
+}
+
+.adminlog form button, .adminReg form button, .adminFog form button {
+    width: 104%;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+
+
+/* admin header styling */
+.dash_head {
+    height: 10vh;
+    background-color: #31b33c;
+}
+
+.navbtn {
+    display: none;
+}
+
+.dash_head_icon {
+    top: 12px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 3px #000;
+}
+
+.dash_head_icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/* dashboard aside section */
+.dash_aside {
+    width: 300px;
+    height: 90vh;
+    background-color: black;
+}
+
+.profile_info {
+    padding-top: 20px;
+}
+
+.profile_info img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #ffffff;
+}
+
+.profile_info h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* navigation */
+.navigation {
+}
+
+.navigation a {
+    width: 80%;
+    font-size: 1em;
+    padding: 10px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation a span {
+    font-weight: bold;
+}

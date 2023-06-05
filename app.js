@@ -1,93 +1,47 @@
-const user = [
-  {
-    username: "Ezkiel8807",
-    firstname: "Ezekiel",
-    Lastname: "Ayebidun",
-    islogin: false,
-    password: "##Iyanu8807"
-  },
-  
-  {
-    username: "pelumi8807",
-    firstname: "pelumi",
-    Lastname: "Ayebidun",
-    islogin: false,
-    password: "##Pelumi8807"
-  }
-]
+import dotenv from "dotenv";
+import express from "express";
+import bodyParser from "body-parser";
+
+//get control routes
+import indexRoute from './routes/userRoute.js'
+
+import adminGetRoutes from './routes/adminGetRoutes.js'
+import adminPostRoutes from './routes/adminPostRoutes.js'
 
 
-// Example POST method implementation:
-async function postData(url = "", data = {}) {
-  // Default options are marked with *
-  const response = await fetch(url, {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    mode: "cors", // no-cors, *cors, same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data), // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
+
+//configure environment variale
+dotenv.config();
+
+//intiate express
+const daioupis = express();
+
+//template engine
+daioupis.set('view engine', 'ejs');
+
+//static file folder
+daioupis.use(express.static("public"));
+
+// Body-parser middleware
+daioupis.use(bodyParser.urlencoded({ extended: true }))
+daioupis.use(bodyParser.json())
 
 
-//function run when page is fully loaded
-document.addEventListener('DOMContentLoaded', function () {
+//index routes
+daioupis.get("/", indexRoute);
 
-  //do something here ...
-  if( window.location.href == "index.html"){
-    alert('Admin')
-  }
-});
+//admin get routes
+daioupis.get("/admin", adminGetRoutes);
+
+//admin post routes
+daioupis.post("/admin", adminPostRoutes);
+
+//other routes not specify
+daioupis.get("*", (req, res) => {
+    res.send("error - page not found")
+})
 
 
-//function to open and close nav on mobile view
-function show$hideNav() {
-  let headerNav =  document.getElementById("headerNav");
-
-  if (headerNav.style.display == "block"){
-    headerNav.style.display = "none";
-  }else {
-    headerNav.style.display = "block";
-  }
-};
-
-//function to open and close side nav in mobile
-function showsidenav() {
-  let headerNav =  document.getElementById("dash_aside");
-
-  if (headerNav.style.display == "block"){
-    headerNav.style.display = "none";
-  }else {
-    headerNav.style.display = "block";
-  }
-};
-
-//Back to homepage function
-function logo() {
-  window.location.href = "./index.html";
-};
-
-function adminlogin() {
-
-  //get login parameters
-  let err_msg = document.getElementById("err_msg");
-  let username = document.getElementById('username').value;
-  let password = document.getElementById('password').value;
-
-  if(!username && !password){
-    err_msg.innerHTML = "All fields required!";
-
-  }else {
-
-    postData("127.0.0.1:3000/api/admin", { "username": username, "password": password }).then((data) => {
-      console.log(data); // JSON data parsed by `data.json()` call
-    });
-  }
-}
+//app listen to port 3000
+daioupis.listen(process.env.PORT);
+console.log(`Server runing on port ${process.env.PORT}`)

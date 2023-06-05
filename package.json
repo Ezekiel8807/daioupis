@@ -1,0 +1,20 @@
+{
+  "name": "daioupis",
+  "version": "1.0.0",
+  "description": "Design and implementation of university projects information system",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Ezefizzy",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2"
+  }
+}
